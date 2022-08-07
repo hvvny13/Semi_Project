@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>try</title>
+<script type="text/javascript">
+function test() {
+	try { // 에외가 발생할 가능성이 있는 코드
+		alert("Hello");
+	} catch(e) {
+		// 예외가 발생할 때의 코드
+		msg = "오류발생 : " + e.massage;
+		alert(msg);
+	} finally {
+		// 항상 실행되는 코드
+		alert("종료되었습니다.");
+	}
+}
+
+test();
+
+</script>
+</head>
+<body>
+
+</body>
+</html> 

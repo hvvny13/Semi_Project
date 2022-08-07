@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>callbackFunc</title>
+<script type="text/javascript">
+/* 콜백함수는 함수를 매개변수로 사용하는 함수를 말한다. 또, 콜백함수도 클로저의 일종이다. 
+ * 비동기(Asynchronous)방식의 함수로 사용되며 특징은 함수 속에서 또 다시 다른 함수를 call한다.
+ */
+ function check(massage) { // 콜백함수 즉, 매개변수가 함수로 넘어온 함수
+	alert(message);
+	var i = 0;
+	var sum = 0;
+	
+	while (true) {
+		i++
+		sum += i; // sum = sum + i
+		if (sum > 20) {
+			message(); // check함수 호출 실행
+			break;
+		}
+	}
+}
+
+check(function(){ // check(함수(){}) : 환경을 기억하는 클로저 함수
+	alert('합이 20을 넘었습니다.');
+});
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

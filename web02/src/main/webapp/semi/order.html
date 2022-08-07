@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주문하기</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+function order() {
+	alert("주문이 완료되었습니다.");
+}
+function move() {
+	location.href="index.html";
+}
+</script>
+</head>
+<body>
+
+  <div data-role="page" id="page1">
+  <div data-role="header">
+  <a href="index.html" data-ajax="false" data-icon="home" class="ui-btn-left" data-iconpos="left">home</a>
+   <h1>주문 페이지</h1>
+  </div>
+  
+  <div data-role="content">
+  
+    <label for="name">받는 사람
+    <input type="text" name="return" id="name" placeholder="받는 분의 성함을 입력하세요">
+    </label>
+    <label for="address">주소
+    <input type="text" name="return" id="address" placeholder="도로명 주소를 입력하세요">
+    </label>
+    <label for="tel">휴대전화
+    <input type="tel" name="return" id="tel" placeholder="숫자로만 입력하세요">
+    </label>
+    <label for="email">이메일
+    <input type="email" name="return" id="email" placeholder="aaaa@abc.com">
+    </label>
+   <fieldset data-role="controlgroup">
+     <legend>주문하실 원두를 선택해주세요</legend>
+     <label for="type1">MOONLIGHT 인도네시아</label>
+     <input type="checkbox" name="type1" id="type1" value="1">
+     <label for="type2">SUNSHINE 콜롬비아</label>
+     <input type="checkbox" name="type2" id="type2" value="2">
+     <label for="type3">HONEY NAP 에티오피아</label>
+     <input type="checkbox" name="type3" id="type3" value="3">
+     <label for="type4">BREEZE 르완다</label>
+     <input type="checkbox" name="type4" id="type4" value="4">
+    </fieldset>
+    <input type="button" onclick="order(); move();" value="주문하기">
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>@DOMINGO</h4>
+  </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ALWAYS ANGELINUS</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+window.open("notice.html","index", "width=610, height=450, left=50, top=50, scrollbars=no, toolbars=no, location=no");
+function hello(cafe) {
+    var cafe = prompt("어떤 메뉴를 주문하시겠어요?", cafe);
+        var price = 0;
+        switch (cafe) {
+        case "아메리카노":
+            price += 3000;
+            alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+        case "녹차": case "레몬티": case "크로플":
+            price += 3500;
+            alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+        case "밀크티": 
+            price += 3800;
+            alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+        case "바닐라라떼": 
+            price += 4300;
+            alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+        case "티라미수": 
+            price += 4500;
+            alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+        case "카페라떼":
+            price += 4900;
+            alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+        case "눈꽃빙수":
+            price += 5500;
+            alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+            case "null": 
+            document.re
+        default:
+        alert("주문하신 메뉴는 " + cafe + "입니다.\n가격은 " + price + "원입니다.");
+            break;
+        }
+}
+
+$("#text1").ready(function(){
+	$("#text1").html("<marquee>매일 정성을 담아 주문 즉시 로스팅한 원두를 언제 어디서나 당일 배송으로 즐기세요</marquee>");
+});
+
+var day = new Date();
+var tod = day.getFullYear() + "-" + (day.getMonth() + 1) + "-" + day.getDate(); 
+document.getElementById('tod').innerHTML = tod;
+
+
+</script>
+
+<style type="text/css">
+
+@font-face {
+    font-family: 'MICEMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEMyungjo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.today {
+    text-align: right;
+    color: #A0BCC2;
+}
+
+h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+hr {
+    border: solid 10px;
+    background-color: #A0BCC2;
+    border-color: #A0BCC2;
+    margin-bottom: 2%;
+}
+
+table {
+    
+    font-family: 'MICEMyungjo';
+	width: 100%;
+}
+
+.table1 {
+    padding-bottom: 3%;
+}
+
+th {
+    width: 30%;
+}
+
+a:visited {
+	text-decoration: underline;
+	color: #A0BCC2;
+}
+
+a:active { 
+	text-decoration:overline; 
+	color: green;
+}
+
+a:link {
+	text-decoration: none; 
+	color: grey;
+}
+
+body {
+	background-color: #F9EBC8;
+}
+
+th {
+	font-size: 20px;
+	margin: 40px;
+}
+
+h4 {
+    margin: 3%;
+    font-family: 'Chosunilbo_myungjo';
+	color: grey;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+button {
+    margin: auto;
+    margin-bottom: 4%;
+    display: block;
+    
+    border: 1px solid #A0BCC2;
+    background-color: rgba(0, 0, 0, 0);
+    color: skyblue;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: #A0BCC2;
+}
+
+legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+fieldset {
+    border-color: #A0BCC2;
+    border-style: dashed;
+    padding: 10%;
+}
+
+#member {
+    font-family: 'MICEMyungjo';
+    text-align: right;
+    padding-right: 5%;
+}
+
+</style>
+</head>
+<body>
+    <h1 align="center">ALWAYS ANGELINUS</h1>
+    <p id="member"><a href="member.html">회원가입</a></p>
+    <table class="table1">
+        <tr>
+            <td>
+                <ul>
+                <fieldset>
+                <legend>Coffee</legend>
+                    <div>
+                    <li>아메리카노  3000원</li>
+                    <li>카페라떼  4900원</li>
+                    <li>바닐라라떼  4300원</li>
+                    </div>
+                    </fieldset>
+                </ul>
+          
+            </td>
+            
+            <td>
+                <ul>
+                    <fieldset>
+                        <legend>Tea</legend>
+                    <div>
+                    <li>녹차  3500원</li>
+                    <li>밀크티  3800원</li>
+                    <li>레몬티  3500원</li>
+                    </div>
+                </fieldset>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <fieldset>
+                        <legend>Dessert</legend>
+                    <div>
+                    <li>눈꽃빙수  5500원</li>
+                    <li>티라미수  4500원</li>
+                    <li>크로플  3500원</li>
+                    </div>
+                    </fieldset>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <button onclick="hello()">주문하기</button>
+    <hr>
+    <table>
+        <tr>
+            <th><img alt=""
+                    src="https://shop-phinf.pstatic.net/20220421_264/1650517860663qLqLB_JPEG/51653703329247229_1939305760.jpg?type=f296_296">
+            </th>
+            <th><img alt=""
+                    src="https://shop-phinf.pstatic.net/20220421_223/1650517876180KDvPs_JPEG/51653718845681151_216395635.jpg?type=f296_296">
+            </th>
+            <th><img alt=""
+                    src="https://shop-phinf.pstatic.net/20220421_199/1650517892531sefhR_JPEG/51653726307085903_1838617929.jpg?type=f296_296">
+            </th>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="https://smartstore.naver.com/angelinusmall/products/6516163231">
+                    MOONLIGHT 인도네시아<br>
+                    16,000원
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://smartstore.naver.com/angelinusmall/products/6516141354">
+                    BREEZE 르완다<br>
+                    16,000원
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://smartstore.naver.com/angelinusmall/products/6516097358">
+                    HONEY NAP 에티오피아<br>
+                    16,000원
+                </a>
+            </td>
+        </tr>
+    </table>
+    <h4 id="text1">매일 정성을 담아 주문 즉시 로스팅한 원두 언제 어디서나 당일 배송으로 즐기세요</h4>
+    <button align="center" onclick="location.href='index2.html'">주문하기</button>
+    <div></div>
+    <hr>
+    <p id="date"></p>
+    <table>
+        <tr >
+            <td>&copy;ANGELINUS</td>
+            <td><div class="today"><p id="tod">오늘 날짜</p></div></td>
+        </tr>
+    </table>
+</body>
+
+</html>

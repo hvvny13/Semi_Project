@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myGame</title>
+    <style>
+        @font-face {
+        font-family: 'MICEGothic Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+        }
+        h1 {
+            font-family: 'MICEGothic Bold';
+        }
+
+    </style>
+    <script>
+        document.write("<h1>가위, 바위, 보 게임</h1>");
+        var t = prompt("가위, 바위, 보 중 선택하세요", "가위");
+        var tNum;
+        switch(t) {
+            case "가위":
+            tNum = 1;
+            break;
+            case "바위":
+            tNum = 2;
+            break;
+            case "보":
+            tNum = 3;
+            break;
+            default:
+                alert("잘못 입력하셨습니다. \n가위, 바위, 보를 입력하세요.");
+                location.reload();
+        }
+
+        var com = Math.ceil(Math.random() * 3);
+
+        document.write("<img src=../images/math_img_" + com + ".png>");
+
+        if (tNum == com) {
+            alert("비겼습니다.")
+        } else if (com == 1 && tNum  == 2) {
+            alert("당신이 이겼습니다.");
+        } else if (com == 1 && tNum == 3) {
+            alert("당신이 졌습니다.");
+        } else if (com == 2 && tNum == 1) {
+            alert("당신이 졌습니다.");
+        } else if (com == 2 && tNum == 3) {
+            alert("당신이 이겼습니다.");
+        } else if (com == 3 && tNum == 1) {
+            alert("당신이 이겼습니다.");
+        } else if (com == 3 && tNum == 2) {
+            alert("당신이 졌습니다.")
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

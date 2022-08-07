@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>inline_btn</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="page" id="pageone">
+  <div data-role="header">
+   <h1>모바일 홈페이지</h1>
+  </div>
+  <div data-role="content">
+   <p>content영역</p>
+   <a href="#pagetwo" data-role="button" data-inline="true">두번째 페이지</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>Copyright by kim. All Rights Reserved</h4>
+  </div>
+ </div>
+ 
+   <div data-role="page" id="pagetwo">
+  <div data-role="header">
+   <h1>모바일 홈페이지</h1>
+  </div>
+  <div data-role="content">
+   <p>content영역</p>
+   <!-- data-inline="true" : 여백제거 버튼은 버튼크기가 작기 때문에 여러개의 버튼을 더 많이 배치할 수 있다. -->
+   <a href="#pageone" data-role="button" data-inline="true">첫번째 페이지</a>
+   <a href="#pageone" data-role="button" data-inline="true">첫번째 페이지</a>
+   <a href="#pageone" data-role="button" data-inline="true">첫번째 페이지</a>
+   <a href="#pageone" data-role="button" data-inline="true">첫번째 페이지</a>
+   <a href="#pageone" data-role="button" data-inline="true">첫번째 페이지</a>
+   <a href="#pageone" data-role="button" data-inline="true">첫번째 페이지</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>Copyright by kim. All Rights Reserved</h4>
+  </div>
+ </div>
+</body>
+</html>

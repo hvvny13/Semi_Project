@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>func</title>
+<script type="text/javascript">
+function greeting(name, position) {
+	alert(name + " " + position + "님 안녕하세요?")
+}
+
+function greeting2() {
+	var name = document.getElementById("name").value;
+	var position = document.getElementById("position").value;
+	var part = document.getElementById("part").value;
+	
+	if (name == "") { // 빈값이면
+		alert("이름을 입력하세요.");
+		document.getElementById("name").focus(); // 입력커서 이동
+		return; // 함수종료
+	}
+	
+	if (position == "") { // 빈값이면
+		alert("이름을 입력하세요.");
+		document.getElementById("position").focus(); // 입력커서 이동
+		return; // 함수종료
+	}
+	var str = name + " " + position + "님 안녕하세요?";
+	alert(str);
+	var str2 = name + " " + position + "님의 방문을 환영합니다.\n" + "당신의 부서는 " + part + "입니다.";
+	alert(str2);
+	document.getElementById("form1").submit(); // 수동서밋
+}
+</script>
+
+</head>
+<body>
+<button type="button" onclick="greeting('홍길동', '부장')">클릭하세요</button>
+<form id="form1" method="post" action="func_result.jsp">
+이름 : <input id="name" name="name"><br>
+직급 : <input id="position" name="position"><br>
+부서 : <input id="part" name="part"><br>
+<button type="button" onclick="greeting2()">확인</button>
+
+</form>
+</body>
+</html>

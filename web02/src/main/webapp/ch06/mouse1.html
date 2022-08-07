@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mouse1</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+ /* $(function(){
+	$("img").bind({
+		mouseout : function(){//마우스가 빠져나갈때
+		$("img").attr("src","../images/i0075.jpg");
+		},
+		mouseover : function() {
+			$("img").attr("src","../images/i0076.jpg");
+		},
+		click : function() {
+			$("img").attr("src","../images/i0073.jpg");
+		}
+	});
+}); */
+
+//이벤트를 별도로 처리할 때
+$(function(){
+	$("img").mouseout(function(){
+		$("img").attr("src","../images/i0075.jpg");
+	});
+	$("img").mouseover(function(){
+		$("img").attr("src","../images/i0076.jpg");
+	});
+	$("img").click(function(){
+		$("img").attr("src","../images/i0073.jpg");
+	});
+});
+</script>
+</head>
+<body>
+<img alt="" src="../images/i0075.jpg">
+</body>
+</html>

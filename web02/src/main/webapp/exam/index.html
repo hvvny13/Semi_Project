@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe SABADO</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+hr {	
+	margin: 5%;
+}
+
+body {
+	font-family: 'IBMPlexSansKR-Regular';
+}
+
+#review #review_p {
+	font-family: 'RIDIBatang';
+	text-align: center;
+}
+
+#about h3 {
+	margin-left: 6px;
+	border-left: 5px solid black;
+}
+
+#about p {
+	padding: 10px;
+	line-height: 30px;
+}
+
+#about img {
+	width: 100%;
+	height: 30%;
+	align-content: center;
+}
+
+#about button1 {
+	margin-top: 300%;
+	
+}
+
+.picture {list-style: none; padding: 0; margin: 0;}
+.picture li {float: left; width: 50%;}
+.picture li a {display: block; margin: 5px; border: 1px;}
+.picture li img {display: block; width: 50%; height: auto;}
+.picture li img:hover {
+	display: block; width: 100%; height: auto;}
+</style>
+</head>
+<body>
+ <div data-role="page" id="page1" class="page1" data-title="Cafe SABADO">
+   <div data-role="header" data-position="fixed" data-theme="b">
+   <a href="#panel1" class="ui-btn-left">회원가입</a>
+   <a href="#panel2" class="ui-btn-right">로그인</a>
+   <h1>Cafe SABADO</h1>
+   <div data-role="navbar">
+    <ul>
+     <li><a href="#menu">Menu</a></li>
+     <li><a href="#review">Review</a>
+     <li><a href="#about">About Us</a>
+    </ul>
+    </div>
+    </div>
+    
+     <div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+    <form>
+     <h1>회원가입</h1>
+     <label for="name">이름 : </label>
+     <input name="name" id="name" value="" data-mini="true" data-clear-btn="true">
+     <label for="id">아이디 : </label>
+     <input name="id" id="id" value="" data-mini="true" data-clear-btn="true">
+     <label for="password1">비밀번호 : </label>
+     <input type="password" name="password1" id="password1" value=""
+     data-mini="true" data-clear-btn="true">
+     <label for="password2">비밀번호 확인 : </label>
+     <input type="password" name="password2" id="password2" value=""
+     data-mini="true" data-clear-btn="true">
+      <div class="ui-grid-a">
+       <div class="ui-block-a">
+       <a href="#" data-role="button" data-rel="close">취소</a>
+       </div>
+      <div class="ui-block-b">
+       <a href="#" data-role="button" data-rel="close">가입</a>
+     </div>
+     </div>
+    </form>
+   </div>
+    
+   <div data-role="panel" id="panel2" data-display="overlay" data-theme="b">
+   <form>
+   <h1>로그인</h1>
+   <label for="id">아이디 : </label>
+   <input name="id" id="id" value="" data-mini="true" data-clear-btn="true">
+   <label for="password">비밀번호 : </label>
+   <input type="password" name="password" id="password" value=""  data-mini="true" data-clear-btn="true">
+   <div class="ui-grid-a">
+    <div class="ui-block-a">
+     <a href="#" data-role="button" data-rel="close">취소</a>
+     </div>
+     <div class="ui-block-b">
+     <a href="#" data-role="button" data-rel="close">로그인</a>
+    </div>
+    
+    
+    <hr>
+    <input type="button" value="아이디 찾기">
+    <input type="button" value="비밀번호 찾기">
+   </div>
+  </form>
+ </div>
+
+
+  <div data-role="content" id="content">
+
+  <p style="text-align: center; font-size: 20px;">원두를 선택하세요</p>
+  <div data-role="controlgroup">
+   <a href="#moonlight" data-role="button">MOONLIGHT 인도네시아</a>
+   <a href="#sunshine" data-role="button">SUNSHINE 콜롬비아</a>
+   <a href="#honeynap" data-role="button">HONEY NAP 에티오피아</a>
+   <a href="#breeze" data-role="button">BREEZE 르완다</a>
+  </div>
+  <hr>
+   <div class="ui-grid-b">
+    <div class="ui-block-a"><a href=gallery.html><img src="images/gallery1.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-b"><a href=gallery.html><img src="images/gallery2.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-c"><a href=gallery.html><img src="images/gallery3.jpg" width="95%" height="90%"></a></div>
+    
+    <div class="ui-block-a"><a href=gallery.html><img src="images/gallery4.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-b"><a href=gallery.html><img src="images/gallery5.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-c"><a href=gallery.html><img src="images/gallery6.jpg" width="95%" height="90%"></a></div>
+   </div>
+  </div> 
+  <div data-role="footer" id="footer" data-position="fixed" data-theme="b"> 
+   <p style="text-align: center;">직접 로스팅한 원두를 언제 어디서나 당일 배송으로 즐기세요</p>
+  </div>
+  </div>
+  
+  <body>
+
+  <div data-role="page" id="gallery">
+  <div data-role="header">
+  <a href="#page1" data-icon="home" data-direction="reverse">홈</a>
+   <h1>GALLERY</h1>
+  </div>
+  <div data-role="content">
+   <ul class="picture">
+    <li><a href="images/gallery1.jpg" rel="external"><img src="images/gallery1.jpg"></a></li>
+    <li><a href="images/gallery2.jpg" rel="external"><img src="images/gallery2.jpg"></a></li>
+    <li><a href="images/gallery3.jpg" rel="external"><img src="images/gallery3.jpg"></a></li>
+    <li><a href="images/gallery4.jpg" rel="external"><img src="images/gallery4.jpg"></a></li>
+    <li><a href="images/gallery5.jpg" rel="external"><img src="images/gallery5.jpg"></a></li>
+    <li><a href="images/gallery6.jpg" rel="external"><img src="images/gallery6.jpg"></a></li>
+    <li><a href="images/gallery7.jpg" rel="external"><img src="images/gallery7.jpg"></a></li>
+    <li><a href="images/gallery8.jpg" rel="external"><img src="images/gallery8.jpg"></a></li>
+    <li><a href="images/gallery9.jpg" rel="external"><img src="images/gallery9.jpg"></a></li>
+    <li><a href="images/gallery10.jpg" rel="external"><img src="images/gallery10.jpg"></a></li>
+    <li><a href="images/gallery11.jpg" rel="external"><img src="images/gallery11.jpg"></a></li>
+    <li><a href="images/gallery12.jpg" rel="external"><img src="images/gallery12.jpg"></a></li>
+   </ul>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>Cafe SABADO</h4>
+  </div>
+ </div>
+ 
+ <div data-role="page" id="menu">
+ <div data-role="header" data-add-back-btn="true">
+ <div data-role="navbar">
+    <ul>
+     <li><a href="#menu">Coffee</a></li>
+     <li><a href="#review">Beverage</a>
+     <li><a href="#about">Desert</a>
+    </ul>
+    </div>
+ </div>
+ 
+  <ul data-role="listview" data-inset="true">
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74cfa0a50_1920.jpg">
+   <h3>아메리카노</h3>
+   <p>2800원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74d039071_1920.jpg">
+   <h3>카페라떼</h3>
+   <p>3500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74d06b555_1920.jpg">
+   <h3>바닐라라떼</h3>
+   <p>3800원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74d235830_1920.jpg">
+   <h3>돌체라떼</h3>
+   <p>3800원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74ccd13b5_1920.jpg">
+   <h3>카페모카</h3>
+   <p>4000원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74d235830_1920.jpg">
+   <h3>카푸치노</h3>
+   <p>4000원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74d079105_1920.jpg">
+   <h3>카라멜마끼야또</h3>
+   <p>4200원</p>
+   </li>
+  </ul>
+ </div>
+
+ <div data-role="page" id="beverage">
+ <div data-role="header" data-add-back-btn="true">
+ <a href="#dessert" class="ui-btn-right" data-icon="carat-r" data-iconpos="right">Beverage</a>
+ <h1>BEVERAGE</h1>
+ </div>
+ <h4>Tea</h4>
+  <ul data-role="listview" data-inset="true">
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625fa37e74496_1920.jpg">
+   <h3>녹차</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625fa37cd82d9_1920.jpg">
+   <h3>얼그레이티</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625fa37e64417_1920.jpg">
+   <h3>레몬티</h3>
+   <p>2500원</p>
+   </li>
+  </ul>
+  <h4>Latte</h4>
+  <ul data-role="listview" data-inset="true">
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74bdc7043_1920.jpg">
+   <h3>초코라떼</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74bf34746_1920.jpg">
+   <h3>민트초코라떼</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74c02bb94_1920.jpg">
+   <h3>딸기라뗴</h3>
+   <p>2500원</p>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74bd9aec8_1920.jpg">
+   <h3>녹차라떼</h3>
+   <p>2500원</p>
+   </li>
+  </ul>
+  <h4>Ade</h4>
+  <ul data-role="listview" data-inset="true">
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f9a2d27c63_1920.jpg">
+   <h3>아이스티</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f9a2d93000_1920.jpg">
+   <h3>블루레몬에이드</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f9a2e7ddfb_1920.jpg">
+   <h3>자몽에이드</h3>
+   <p>2500원</p>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f9a2d7f5b8_1920.jpg">
+   <h3>복숭아에이드</h3>
+   <p>2500원</p>
+   </li>
+  </ul>
+  <h4>Smoothie</h4>
+  <ul data-role="listview" data-inset="true">
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f747e031c8_1920.jpg">
+   <h3>딸기요거트 스무디</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/628d84ba8af51_1920.jpg">
+   <h3>블루베리요거트 스무디</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74811cc3d_1920.jpg">
+   <h3>오레오 스무디</h3>
+   <p>2500원</p>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f7480acaf7_1920.jpg">
+   <h3>초코 스무디</h3>
+   <p>2500원</p>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/625f748112f5d_1920.jpg">
+   <h3>밀크쉐이크</h3>
+   <p>2500원</p>
+   </li>
+  </ul>
+ </div>
+ 
+  <div data-role="page" id="dessert">
+  <div data-role="header" data-add-back-btn="true">
+  <a href="#page1" data-icon="home" class="ui-btn-right">home</a>
+  <h1>DESSERT</h1>
+  </div>
+  <ul data-role="listview" data-inset="true">
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/62834b006b6d6_1920.jpg">
+   <h3>플레인 스콘</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/62834b00502a7_1920.jpg">
+   <h3>초코칩 스콘</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/615d601241b9e_1920.jpg">
+   <h3>마카롱</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/615d601080773_1920.jpg">
+   <h3>크로플</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/615d6010a5e2f_1920.jpg">
+   <h3>햄치즈샌드위치</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/615d601162fb9_1920.jpg">
+   <h3>마카다미아월넛쿠키</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/615d60121b299_1920.jpg">
+   <h3>우유크림카스테라</h3>
+   <p>2500원</p>
+   </li>
+   <li><img src="https://cdn.quv.kr/gno3wdwfr/up/615d6b7fda091_1920.jpg">
+   <h3>육쪽마늘빵</h3>
+   <p>2500원</p>
+   </li>
+  </ul>
+ </div>
+ 
+ <div data-role="page" id="about">
+  <div data-role="header" data-theme="b" data-position="fixed" data-add-back-btn="true">
+	<h1>매장안내</h1>  
+  </div>
+  <h3>&nbsp;Cafe SABADO 소개</h3>
+  
+   <img src="https://mblogthumb-phinf.pstatic.net/20150831_2/shcida_1441006219297VAzRE_JPEG/552b383ce58ececd8200032d_blue-bottle-coffee-aoyama-cafe-schemata-architects_07_b.jpg?type=w2">
+   
+   <p>Cafe SABADO는 2020년 런칭되어 다양한 원두와 음료를 판매하고 있습니다. 
+   풍부한 커피맛과 이를 편안하게 즐길 수 있는 공간을 통해 고객의 기분좋은 경험을 제공하는데 앞장서겠습니다.</p>
+   
+  <hr>
+  <h3>&nbsp;찾아오시는 길</h3>
+  <div class="ui-grid-a">
+   <div class="ui-block-a">
+    <a href="https://goo.gl/maps/2eDkTBMsesKzVX6i6"><img src="images/map.png"></a>
+   </div>
+   <div class="ui-block-b">
+    <p><strong>Cafe SABADO</strong></p>
+    <p>서울특별시 역삼동 779-1</p>
+    <p>tel : 02-123-1231
+    <input type="button" value="문의하기" id="button1" style="marginr-top: 30px;">
+   </div>
+  </div>
+ </div>
+
+<div data-role="dialog" id="moonlight">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>MOONLIGHT</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">인도네시아 가요 G1 TP 네츄럴</div>
+   <img src="images/coffee1.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>네츄럴 방식으로 가공한 인도네시아 커피입니다.</p>
+   <p>강렬한 베리향과 깊은 건자두의 풍미를 느낄 수 있습니다.</p>
+   <p>다크초콜릿의 묵직한 바디감이 특징인 제품입니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>베리</li>
+   <li>건자두</li>
+   <li>다크초콜릿</li>
+   </ul>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@Sabado</h1>
+  </div>
+ </div>
+   
+   <div data-role="dialog" id="sunshine">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>SUNSHINE</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">콜롬비아 마운틴 워터 산 아구스틴</div>
+   <img src="images/coffee2.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>깨끗한 빙하수를 이용해 카페인을 <br> 최대한 제거한 디카페인 원두입니다.</p>
+   <p>건포도의 풍부한 단맛과 <br> 너티류의 고소함이 어우러진 커피입니다.</p>
+   <p>균형잡힌 맛의 즐거움을 선사합니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>건포도</li>
+   <li>구운 아몬드</li>
+   <li>캐러멜</li>
+   <li>블랙티</li>
+   </ul>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@Sabado</h1>
+  </div>
+ </div>
+ 
+    <div data-role="dialog" id="honeynap">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>HONEY NAP</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">에티오피아 샤키소 G1 스페셜 허니</div>
+   <img src="images/coffee3.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>에티오피아의 산지 특성에 <br> 허니 프로세싱으로 단맛이 배가 되었습니다.</p>
+   <p>핵과류의 화사함과 자스민의 꽃향기로 더 산뜻합니다.</p>
+   <p>시간이 지날수록 건자두의 풍미를 느낄 수 있고 <br> 목넘김이 깔끔합니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>자스민</li>
+   <li>핵과류</li>
+   <li>건포도</li>
+   <li>건자두</li>
+   <li>블랙티</li>
+   </ul>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@Sabado</h1>
+  </div>
+ </div>
+ 
+     <div data-role="dialog" id="breeze">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>BREEZE</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">르완다 쿠카무</div>
+   <img src="images/coffee4.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>달콤한 조청의 맛이 은은하게 느껴집니다.</p>
+   <p>섬세하면서도 가벼운 오렌지 산미로 <br> 산뜻하게 즐기실 수 있습니다.</p>
+   <p>전체적으로 부드러운 바디감이 특징인 커피입니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>오렌지</li>
+   <li>조청</li>
+   </ul>
+   <input type="button" onclick="" value="주문하기">
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@Sabado</h1>
+  </div>
+ </div>
+ 
+ <div data-role="page" id="review">
+ <div data-role="header" data-theme="b" data-position="fixed" data-add-back-btn="true">
+   <h1>REVIEW</h1>
+  </div>
+  <div data-role="content" >
+  <p id="review_p">직접 로스팅한 원두를 구매하신 고객님들의 리뷰입니다.</p>
+  <ul data-role="listview" data-inset="true">
+   <li><a href="#"><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMTlfMTYg/MDAxNTc0MTYzMzgzOTcx.bGr7eqEp1OKx6fKEkFA3vW0TtWs0GNmxHQh4BbHWeFQg.tsOKHaxzkAuSXGn8a0plaKykdrE9dhKEQdA9Ph56784g.JPEG.sodailyso/1574163384775.jpg?type=w800" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 23920123</p>
+   <h3>고소하고 맛있어요</h3>
+   <p>쌉사름한 원두보다는 고소한 원두를 좋아하는데 이 원두가 딱 그런 원두네요 만족스러워요~</p>
+   <p>주문 상품 : moonlight 에티오피아</p>
+   </a></li>
+   <li><a href="#"><img src="https://coffeecg.com/file_data/coffeecg/2020/12/26/b2394c072911049bebd27959cc1fb0d7.jpeg" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 28387491</p>
+   <h3>가격이 저렴해요</h3>
+   <p>달달 고소한 초당 옥수수를 사용한 옥수수페너, 옥수무디가 출시되었습니다. 옥수수페너는 따뜻한 음료와 차가운 음료 두가지 모두 판매하고 옥수무디는 아이스만 판매하고 있습니다.</p> 
+   <p>주문 상품 : moonlight 에티오피아</p>
+   </a></li>
+   <li><a href="#"><img src="https://m.coffeecg.com/file_data/coffeecg/2021/08/22/8102240235c4788dd9c390d216deb049.jpeg" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 28379743</p>
+   <h3>원두가 싱싱해서 좋았어요</h3>
+   <p>기존의 음료 사이즈가 부족한 고객님들을 위해 1.1L의 대용량 보틀이 출시되었습니다. 아메리카노, 카페라떼, 바닐라라떼, 돌체라떼, 복숭아 아이스티, 초코라떼 총 6종을 주문하실 수 있습니다.</p>
+   <p>주문 상품 : moonlight 에티오피아</p>
+   </a></li>
+   <li><a href="#"><img src="https://blog.kakaocdn.net/dn/XE4Uj/btrb8U8RfsT/41sO8XJK5ti8jIFtsEFk1k/img.jpg" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 23123442</p>
+   <h3>산뜻하게 먹기 좋은 것 같아요</h3>
+   <p>더운 여름을 맞이하여 입 안을 시원하게 해줄 민트초코 음료가 출시되었습니다. 민트초코라떼는 hot/ice로 출시되었고 민트초코스무디는 ice로만 출시되었습니다.</p>
+   <p>주문 상품 : moonlight 에티오피아</p>
+   </a></li>
+   <li><a href="#"><img src="https://mblogthumb-phinf.pstatic.net/MjAxNzEwMjJfMTYg/MDAxNTA4Njc3MjkwMjQ1.NAKo7T8KQTz1ERhCOLS4_fPpw_LMiSBuGxKmyw6tczcg.AAjn-ml1Zp5pQXZeNhbq2zDVAIO9xCphtj1bPwuRktUg.JPEG.783s/%EC%97%90%EB%88%84%EB%A6%AC%EC%BB%A4%ED%94%BC_20171022_w0.jpg?type=w800" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 21342234</p>
+   <h3>쓴맛이 없어서 좋아요</h3>
+   <p>크로플 6종이 출시되었습니다. 출시 이벤트로 플레인 크로플과 아메리카노를 세트로 3500원에 판매하고 있습니다.</p>
+   <p>주문 상품 : moonlight 에티오피아</p>
+   </a></li>
+  </ul>
+  </div>
+  <div data-role="footer" data-fullscreen="true" data-position="fixed">
+  
+  </div>
+ </div>
+ 
+</body>
+</html>

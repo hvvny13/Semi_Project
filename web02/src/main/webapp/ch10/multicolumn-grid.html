@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>multicolumn-grid</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>페이지 제목</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-grid-a"> <!-- 블럭(셀) 2개 -->
+    <div class="ui-block-a">블록1</div>
+    <div class="ui-block-b">블록2</div>
+   </div>
+   <div class="ui-grid-b"> <!-- 블럭(셀) 3개 -->
+    <div class="ui-block-a">블록3</div>
+    <div class="ui-block-b">블록4</div>
+    <div class="ui-block-c">블록5</div>
+   </div>
+   <div class="ui-grid-c"> <!-- 블럭(셀) 4개 -->
+    <div class="ui-block-a"><button>버튼1</button></div>
+    <div class="ui-block-b"><button>버튼2</button></div>
+    <div class="ui-block-c"><button>버튼3</button></div>
+    <div class="ui-block-d"><button>버튼4</button></div>
+   </div>
+   <div class="ui-grid-d"> <!-- 블럭(셀) 5개 -->
+    <div class="ui-block-a"><button>버튼1</button></div>
+    <div class="ui-block-b"><button>버튼2</button></div>
+    <div class="ui-block-c"><button>버튼3</button></div>
+    <div class="ui-block-d"><button>버튼4</button></div>
+    <div class="ui-block-e"><button>버튼5</button></div>
+   </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>footer영역</h4>
+  </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myObject1</title>
+    <script>
+
+        function Ob(num, name, id, email, hp) {
+            this.num = num;
+            this.name = name;
+            this.id = id;
+            this.email = email;
+            this.hp = hp;
+        }
+
+        var myOb = new Ob(123, "홍길동", "hong", "hong@gmail.com", "010-1234-5678");
+        document.write("<h>-------------원데이터--------------</h><br>");
+        document.write("사번 : " + myOb.num + "<br>" + "이름 : " + myOb.name + "<br>" + "id : " + myOb.id + "<br>" +"이메일 : " + myOb.email + "<br>" +"hp : " + myOb.hp + "<br>")
+
+        
+        document.write("<h>-------------변경데이터--------------</h><br>");
+        myOb.email = "hong2@gmail.com";
+        myOb.hp = "010-2345-6789";
+        document.write("이메일 : " + myOb.email + "<br>" + "hp : " + myOb.hp + "<br>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

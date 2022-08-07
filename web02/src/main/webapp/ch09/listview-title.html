@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>listview-title</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>페이지 제목</h1>
+  </div>
+  <div data-role="content">
+   <p>content영역</p>
+   <ul data-role="listview" data-filter="true" data-filter-placeholder="검색키워드를 입력하세요">
+    <li data-role="listdivider">박물관 종류</li>
+    <li><a href="#">자연사 박물관</a></li>
+    <li><a href="#">등대 박물관</a></li>
+    <li><a href="#">공룡 박물관</a></li>
+    <li><a href="#">하늘 박물관</a></li>
+   </ul>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>footer영역</h4>
+  </div>
+ </div>
+</body>
+</html>

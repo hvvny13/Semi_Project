@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>index</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+function review() {
+	alert("리뷰가 작성되었습니다.");
+}
+function move() {
+	location.href="review.html";
+}
+</script>
+<style type="text/css">
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body #revi {
+	font-family: 'RIDIBatang';
+	text-align: center;
+}
+
+</style>
+</head>
+<body>
+ <div data-role="page" id="review">
+  <div data-role="header" data-theme="b" data-position="fixed">
+  <a href="index.html" data-ajax="false" data-icon="home" class="ui-btn-left" data-iconpos="left">home</a>
+   <h1>REVIEW</h1>
+  </div>
+  <div data-role="content" >
+  <p id="revi">직접 로스팅한 원두를 구매하신 고객님들의 리뷰입니다.</p>
+  <ul data-role="listview" data-inset="true">
+   <li><a href="#"><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTExMTlfMTYg/MDAxNTc0MTYzMzgzOTcx.bGr7eqEp1OKx6fKEkFA3vW0TtWs0GNmxHQh4BbHWeFQg.tsOKHaxzkAuSXGn8a0plaKykdrE9dhKEQdA9Ph56784g.JPEG.sodailyso/1574163384775.jpg?type=w800" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 23920123</p>
+   <h3>고소하고 맛있어요</h3>
+   <p>쌉사름한 원두보다는 고소한 원두를 좋아하는데 이 원두가 딱 그런 원두네요 만족스러워요~</p>
+   <p>주문 상품 : moonlight 에티오피아</p>
+   </a></li>
+   <li><a href="#"><img src="https://coffeecg.com/file_data/coffeecg/2020/12/26/b2394c072911049bebd27959cc1fb0d7.jpeg" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 28387491</p>
+   <h3>가격이 저렴해요</h3>
+   <p>저렴한 가격에 신선한 원두를 구매할 수 있어서 좋네요 게다가 당일배송까지 되니까 꾸준히 이용해야겠어요</p> 
+   <p>주문 상품 : honey nap 에티오피아</p>
+   </a></li>
+   <li><a href="#"><img src="https://m.coffeecg.com/file_data/coffeecg/2021/08/22/8102240235c4788dd9c390d216deb049.jpeg" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 28379743</p>
+   <h3>원두가 싱싱해서 좋았어요</h3>
+   <p>원두의 신선도가 얼마나 중요할까 했는데 확실히 신선한 원두를 먹어보니까 차이가 느껴지네요 원두의 맛이 훨씬 더 잘 느껴지는 것 같아요</p>
+   <p>주문 상품 : sunshine 콜롬비아</p>
+   </a></li>
+   <li><a href="#"><img src="https://blog.kakaocdn.net/dn/XE4Uj/btrb8U8RfsT/41sO8XJK5ti8jIFtsEFk1k/img.jpg" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 23123442</p>
+   <h3>산뜻하게 먹기 좋은 것 같아요</h3>
+   <p>날씨가 더워져서 아이스 아메리카노로 만들어먹는데 너무 맛있어요</p>
+   <p>주문 상품 : breeze 르완다</p>
+   </a></li>
+   <li><a href="#"><img src="https://mblogthumb-phinf.pstatic.net/MjAxNzEwMjJfMTYg/MDAxNTA4Njc3MjkwMjQ1.NAKo7T8KQTz1ERhCOLS4_fPpw_LMiSBuGxKmyw6tczcg.AAjn-ml1Zp5pQXZeNhbq2zDVAIO9xCphtj1bPwuRktUg.JPEG.783s/%EC%97%90%EB%88%84%EB%A6%AC%EC%BB%A4%ED%94%BC_20171022_w0.jpg?type=w800" style="width: 30%;">
+   <p class="ui-li-aside">주문번호 21342234</p>
+   <h3>쓴맛이 없어서 좋아요</h3>
+   <p>쓴 맛이 별로 안 나서 좋아요 다음에 재구매 하고싶어요</p>
+   <p>주문 상품 : sunshine 콜롬비아</p>
+   </a></li>
+  </ul>
+  </div>
+  
+  <div data-role="footer" data-fullscreen="true" data-position="fixed">
+  <div data-role="navbar">
+   <ul>
+    <li><a href="index.html" data-ajax="false" data-icon="home">홈</a></li>
+    <li><a href="#write" data-icon="edit">리뷰 작성</a></li>
+   </ul>
+  </div>
+  </div>
+  </div>
+  
+  <div data-role="page" data-title="리뷰작성" id="write">
+ <div data-role="header">
+  <h1>리뷰 작성</h1>
+ </div>
+ <div data-role="content">
+ <form method="post">
+   <label for="title">제목</label>
+     <input type="text" name="title" id="title">
+   <label for="ordernum">주문번호</label>
+     <input type="number" name="title" id="ordernum">
+   
+  <select>
+   <option>리뷰 작성할 원두를 선택하세요</option>
+   <option value="인도네시아">moonlight 에티오피아</option>
+   <option value="콜롬비아">sunshine 콜롬비아</option>
+   <option value="에티오피아">honey nap 에티오피아</option>
+   <option value="르완다">breeze 르완다</option>
+  </select>
+  <input type="file" name="reviewfile" accept=".jsp,.img,.png,.svg">
+  <label for="txtarea">내용</label>
+  <textarea rows="5" cols="30" id="txtarea" placeholder="리뷰를 작성해주세요."></textarea>
+ </form>
+   <div class="ui-grid-a">
+    <div class="ui-block-a">
+     <a href="#menu" data-role="button" onclick="location.href='review.html'">취소</a>
+     </div>
+     <div class="ui-block-b">
+     <a href="#" data-role="button" data-rel="close" onclick="review(); move();">작성</a>
+    </div>
+ </div>
+  
+ </div>
+ <div data-role="footer">
+  <h4>Cafe DOMINGO</h4>
+ </div>
+</div>
+</body>
+</html>

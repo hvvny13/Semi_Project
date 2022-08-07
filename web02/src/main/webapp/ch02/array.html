@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>array</title>
+<script type="text/javascript">
+var fruits = new Array(); // 배열선언
+fruits[0] = "사과";
+fruits[1] = "바나나";
+fruits[2] = "오렌지";
+
+for (i=0; i<fruits.length; i++) {
+	document.write(fruits[i] + "<br>");
+}
+document.write("==================================================" + "<br>");
+
+var textFruits = new Array();
+textFruits["a"] = "수박"; // 배열참조변수[인덱스(문자)];
+textFruits["b"] = "참외";
+textFruits["c"] = "딸기";
+
+// for Each문, 향상된 for문, 숫자 인덱스가 아닌 경우 for Each문 활용
+for (var f in textFruits) {
+	document.write(textFruits[f] + "<br>");
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

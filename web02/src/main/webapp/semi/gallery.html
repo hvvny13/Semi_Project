@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gallery</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+li{list-style: none;}
+.picture {list-style: none; padding: 0; margin: 0;}
+.picture li {float: left; width: 50%;}
+.picture li a {display: block; margin: 5px; border: 1px;}
+.picture li img {display: block; width: 50%; height: auto;}
+.picture li img:hover {
+	display: block; width: 100%; height: auto;}
+</style>
+</head>
+<body>
+
+  <div data-role="page" id="page1">
+  <div data-role="header" data-theme="b">
+  <a href="index.html" data-ajax="false" data-icon="home" class="ui-btn-left" data-iconpos="left">home</a>
+   <h1>GALLERY</h1>
+  </div>
+  <div data-role="content">
+   <ul class="picture">
+    <li><a href="images/gallery1.jpg" rel="external"><img src="images/gallery1.jpg"></a></li>
+    <li><a href="images/gallery2.jpg" rel="external"><img src="images/gallery2.jpg"></a></li>
+    <li><a href="images/gallery3.jpg" rel="external"><img src="images/gallery3.jpg"></a></li>
+    <li><a href="images/gallery4.jpg" rel="external"><img src="images/gallery4.jpg"></a></li>
+    <li><a href="images/gallery5.jpg" rel="external"><img src="images/gallery5.jpg"></a></li>
+    <li><a href="images/gallery6.jpg" rel="external"><img src="images/gallery6.jpg"></a></li>
+    <li><a href="images/gallery7.jpg" rel="external"><img src="images/gallery7.jpg"></a></li>
+    <li><a href="images/gallery8.jpg" rel="external"><img src="images/gallery8.jpg"></a></li>
+    <li><a href="images/gallery9.jpg" rel="external"><img src="images/gallery9.jpg"></a></li>
+    <li><a href="images/gallery10.jpg" rel="external"><img src="images/gallery10.jpg"></a></li>
+    <li><a href="images/gallery11.jpg" rel="external"><img src="images/gallery11.jpg"></a></li>
+    <li><a href="images/gallery12.jpg" rel="external"><img src="images/gallery12.jpg"></a></li>
+   </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="b">
+   <h4>Cafe SABADO</h4>
+  </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>index</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Chosunilbo_myungjo';
+}
+
+p {
+	text-align: center;
+	margin: 30px;
+}
+
+#coffee, #tea, #dessert {
+	font-family: 'Chosunilbo_myungjo';
+}
+
+table {
+	width: 100%;
+	text-align: left;
+}
+
+table-t {
+	text-align: left;
+}
+</style>
+</head>
+<body>
+ <div data-role="page" id="page1" data-title="ALWAYS ANGELINUS">
+   <div data-role="header" data-position="fixed">
+   <a href="#panel1" class="ui-btn-left">회원가입</a>
+   <a href="#panel2" class="ui-btn-right">로그인</a>
+   <h1>ALWAYS ANGELINUS</h1>
+   <div data-role="navbar">
+    <ul>
+     <li><a href="#coffee">Coffee</a></li>
+     <li><a href="#tea">Tea</a></li>
+     <li><a href="#dessert">Dessert</a></li>
+     <li><a href="#new">New</a>
+    </ul>
+    </div>
+    </div>
+    
+     <div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+    <form>
+     <h1>회원가입</h1>
+     <label for="name">이름 : </label>
+     <input name="name" id="name" value="" data-mini="true" data-clear-btn="true">
+     <label for="id">아이디 : </label>
+     <input name="id" id="id" value="" data-mini="true" data-clear-btn="true">
+     <label for="password1">비밀번호 : </label>
+     <input type="password" name="password1" id="password1" value=""
+     data-mini="true" data-clear-btn="true">
+     <label for="password2">비밀번호 확인 : </label>
+     <input type="password" name="password2" id="password2" value=""
+     data-mini="true" data-clear-btn="true">
+      <div class="ui-grid-a">
+       <div class="ui-block-a">
+       <a href="#" data-role="button" data-rel="close">취소</a>
+       </div>
+      <div class="ui-block-b">
+       <a href="#" data-role="button" data-rel="close">가입</a>
+     </div>
+     </div>
+    </form>
+   </div>
+    
+   <div data-role="panel" id="panel2" data-display="overlay" data-theme="b">
+   <form>
+   <h1>로그인</h1>
+   <label for="id">아이디 : </label>
+   <input name="id" id="id" value="" data-mini="true" data-clear-btn="true">
+   <label for="password">비밀번호 : </label>
+   <input type="password" name="password" id="password" value=""  data-mini="true" data-clear-btn="true">
+   <div class="ui-grid-a">
+    <div class="ui-block-a">
+     <a href="#" data-role="button" data-rel="close">취소</a>
+     </div>
+     <div class="ui-block-b">
+     <a href="#" data-role="button" data-rel="close">로그인</a>
+    </div>
+   </div>
+  </form>
+ </div>
+
+
+  <div data-role="content" id="content">
+
+  <p>주문하실 원두를 선택하세요</p>
+   <ul data-role="listview" data-inset="true">
+    <li><a href="https://smartstore.naver.com/angelinusmall/products/6516163231" data-transition="slide">MOONLIGHT 인도네시아</a></li>
+    <li><a href="https://smartstore.naver.com/angelinusmall/products/6516141354" data-transition="slide">BREEZE 르완다</a></li>
+    <li><a href="https://smartstore.naver.com/angelinusmall/products/6516097358" data-transition="slide">HONEY NAP 에티오피아</a></li>
+   </ul>
+  </div> 
+
+  <div data-role="footer" id="footer" data-position="fixed"> 
+   <p>매일 정성을 담아 주문 즉시 로스팅한 원두를 언제 어디서나 당일 배송으로 즐기세요</p>
+  </div>
+  </div>
+ 
+ <div data-role="page" id="coffee">
+ <h1>COFFEE</h1>
+  <ul data-role="listview" data-inset="true">
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74cfa0a50_1920.jpg">아메리카노</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74d039071_1920.jpg">카페라떼</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74d06b555_1920.jpg">바닐라라떼</a></li>
+  </ul>
+ </div>
+
+ <div data-role="page" id="tea">
+ <h1>TEA</h1>
+  <ul data-role="listview" data-inset="true">
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/625f74cfa0a50_1920.jpg">녹차</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/625f748d65718_1920.jpg">버블티</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/625fa37e64417_1920.jpg">레몬티</a></li>
+  </ul>
+ </div>
+ 
+  <div data-role="page" id="dessert">
+  <h1>DESSERT</h1>
+  <ul data-role="listview" data-inset="true">
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/62834b00502a7_1920.jpg">초코칩스콘</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/615d601241b9e_1920.jpg">마카롱</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr/up/615d601080773_1920.jpg">크로플</a></li>
+  </ul>
+ </div>
+ 
+  <div data-role="page" id="new">
+  <h1>NEW</h1>
+  <ul data-role="listview" data-inset="true">
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr%2Fboard%2Fimage%2F625fa83f6d86a_1920.jpg">봄메뉴 음료 리뉴얼</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr%2Fboard%2Fimage%2F625fa7d542665_1920.jpg">스위트콘 옥수수 음료 출시</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr%2Fboard%2Fimage%2F623146f4c0558_1920.jpg">1.1L 대용량 보틀 출시</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr%2Fboard%2Fimage%2F62314675c15e0_1920.jpg">더운 날씨 시원하게 찾아온 민트초코</a></li>
+   <li><a><img src="https://cdn.quv.kr/gno3wdwfr%2Fboard%2Fimage%2F5fe97a5229c6c_1920.jpg">크-로플 출시</a></li>
+  </ul>
+ </div>
+
+   
+   
+</body>
+</html>

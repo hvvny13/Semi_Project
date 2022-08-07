@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>args_func2</title>
+<script type="text/javascript">
+function add() {
+	var output='';
+	var sum=0;
+	for (var i=0; i<arguments.length; i++) {
+		output += arguments[i] + ' ';
+		sum += arguments[i]; // sum에 값들을 더함
+	}
+	output = '입력된 매개변수 ' + ouput + '을 더한 값은\n' + sum + '입니다.';
+	return output;
+}
+
+var out = add(1, 2, 3, 4, 5, 7);
+alert(out);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

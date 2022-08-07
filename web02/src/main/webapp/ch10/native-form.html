@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>native-form</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+  <div data-role="page" id="page1">
+  <div data-role="header">
+   <h1>페이지 제목</h1>
+  </div>
+  <div data-role="content">
+   <form>
+    <h1>동아리 회원 가입</h1>
+    <!-- jQueryMobile에서는 필드셋 효과가 나오지 않는다. -->
+    <fieldset>
+     <legend>필수 정보</legend>
+     <table>
+      <tr>
+       <td><label>학번</label></td>
+       <td><input type="text" value="202203"></td>
+      </tr>
+      <tr>
+       <td><label>이름</label></td>
+       <td><input type="text" value="홍길동" data-role="none"></td>
+      </tr>
+     </table>
+    </fieldset>
+    <input type="submit" value="확인">
+    <input type="reset" value="취소" data-role="none">
+   </form>
+  </div>
+  <div data-role="footer" data-position="fixed">
+   <h4>footer영역</h4>
+  </div>
+ </div>
+</body>
+</html>

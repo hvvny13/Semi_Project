@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid #768CA3;
+            width: 700px;
+            padding: 5%;
+            background-color: #DEEAF6;
+        }
+        form {
+            padding: 3%;
+            margin: auto;
+            display: block;
+            border: 1px solid #D3DADE;
+            background-color: #EDEDED;
+            width: 360px;
+            
+        }
+        table {
+            width: 100%;
+        }
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: dashed;
+            background-color: #EDEDED;
+        }
+        p {
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+        button {
+            background-color: #C5DFB4;
+            border: none;
+            width: 290px;
+            margin: auto;
+            display: block;
+            font-size: 15px;
+            margin-top: 10px;
+            padding: 15px;
+        }
+
+    </style>
+    <script>
+       // 아이디 패스워드 패스워드 확인을 입력하지 않고 다음 입력 요소로 이동하는 경우 필수 입력 항목 입니다 라는 메시지가 입력 요소 하단에 나오게 한다.
+
+        
+        
+        function check() {
+            var id = document.getElementById("id");
+            if (id.value == "") {
+                document.getElementById("idmessage").textContent = "필수 입력 항목 입니다";
+                return;
+            } else {
+                document.getElementById("idmessage").textContent = "";
+                return;
+            }
+        }
+        
+        function check2() {
+            var pwd1 = document.getElementById("pwd1");
+            document.getElementById("pmessage1").textContent = "영문자 대소문자 특수문자 숫자 포함 8 ~ 32자";
+
+        }
+
+        function check3() {
+            document.getElementById("pmessage1").textContent = "";
+            var pwd2 = document.getElementById("pwd2");
+            var pmessage2 = document.getElementById("pmessage2");
+            if (pwd1.value == "") {
+                document.getElementById("pmessage1").textContent = "필수 입력 항목 입니다";
+            }
+        }   
+        
+        function check4() {
+            var email = document.getElementById("email");
+            if (pwd2.value == "") {
+                document.getElementById("pmessage2").textContent = "필수 입력 항목 입니다";
+            } else {
+                document.getElementById("pmessage2").textContent = "";
+            }
+        }
+     
+            
+        function pwdtest() {       
+            var pwd1 = document.getElementById("pwd1");
+            var pwd2 = document.getElementById("pwd2");
+
+            if (pwd1.value != pwd2.value) {
+                alert("비밀번호가 일치하지 않습니다.");
+            }
+            var exp = /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&+=-])(?=.*\d){8,32}/;
+            if (!exp.test(pwd1.value)) {
+                alert("영문자 대소문자 특수문자 숫자 포함 8 ~ 32자로 입력해주세요.");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td> <input name="id" id="id" ><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="idmessage"></p></td>
+                </tr>
+                <tr>
+                    <td>패스워드</td>
+                    <td> <input type="password" id="pwd1" onclick="check(),check2()"><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="pmessage1"></p></td>
+                </tr>
+                <tr>
+                    <td>패스워드 확인</td>
+                    <td> <input type="password" id="pwd2" onclick="check2(),check3()"><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="pmessage2"></p></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email" id="email" onclick="check4()"><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="mailmessage"></p></td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td> <input id="address"><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="addmessage"></p></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input id="address"><br></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="addmessage"></p></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" onclick="pwdtest()">가입</button></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+</body>
+</html>

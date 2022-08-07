@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gugudanEvent</title>
+<script type="text/javascript">
+function enter() {
+	console.log(window.event.keyCode);
+	if (window.event.keyCode == 13) { // 엔터키는 13
+		gugu();
+	}
+}
+
+function gugu() {
+	var dan = document.getElementById("dan").value;
+	var str = "";
+	for (var i=1; i<=9; i++) {
+		str += dan + "x" + i + "=" + dan * i + "<br>";
+	}
+	document.getElementById("result").innerHTML = str;
+}
+
+</script>
+</head>
+<body>
+<!-- 키보드를 누르는 시점에 이벤트가 발생 -->
+<input type="text" id="dan" value="2" size="5" onkeydown="enter()">
+<input type="button" value="확인" onclick="gugu()">
+<div id="result">innerHTML영역</div>
+</body>
+</html>

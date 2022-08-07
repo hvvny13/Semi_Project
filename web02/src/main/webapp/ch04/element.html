@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>element</title>
+<script type="text/javascript">
+//[1]은 두번째 ul태그를 가리킴
+var list =document.getElementsByTagName("ul")[1];
+var allItems = list.getElementsByTagName("li");
+
+for (i=0; i<allItems.length; i++) {
+	alert(allItems[i]);
+}
+</script>
+</head>
+<body>
+<ul>
+ <li>아이템1</li>
+ <li>아이템2</li>
+ <li>아이템3</li>
+</ul>
+<ul>
+ <li>아이템4</li>
+ <li>아이템5</li>
+ <li>아이템6</li>
+</ul>
+
+</body>
+</html>

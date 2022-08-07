@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>anonyClosure</title>
+<script type="text/javascript">
+function outerFunction(name) {
+	var output = 'Hello' + name + '!';
+	return function() { // 내부익명함수
+		alert(output);
+	};
+}
+
+outerFunction('kim')(); // 함수호출 역할로서의 ();를 추가
+/* 즉, 외부함수의 멤버변수와 리턴받는 내부익명함수가 적절히 사용되어져 활용 */
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

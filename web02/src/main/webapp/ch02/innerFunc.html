@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>innerFunc</title>
+<script type="text/javascript">
+function outerFunction() {
+	var a = 10;
+	var b = 20;
+	//alert(c); // 외부함수는 내부함수의 변수에 접근 못한다.
+	function innerFunction() {
+		var b = 30;
+		var c = 40;
+		alert(a); // 내부함수는 외부함수의 변수에 접근할 수 있음
+		alert(b); // 내부함수의 변수가 우선순위가 높다.
+		alert(c);
+	}
+	innerFunction();
+	alert('outerFunction');
+}
+
+outerFunction();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

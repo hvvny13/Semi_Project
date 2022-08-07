@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>callbackFunc2</title>
+<script type="text/javascript">
+function greeting(name) {
+	alert('반갑습니다.' + name); // 4.실행
+}
+
+function processInput(call) {
+	alert(call);
+	var name = prompt("이름을 입력해주세요", ""); // 2.실행
+	call(name); // 3. call변수는 greeting(name){...}을 기억하고 있기 때문에
+	// 파라미터로 nameㄱ밧을 가지고 greeting(name){}을 호출한다.
+}
+processInput(greeting); // processInput(함수이름) 1.호출
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

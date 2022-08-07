@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>custom_type</title>
+<script type="text/javascript">
+// var 객체자료형 = {변수명 : 값, kew : value,......};
+var myCar = {
+	maker : "BMW",
+	model : "X5",
+	year : 2022, 
+	speed : 100, 
+	speedDown : function(){this.speed -= 10;},
+	speedUp : function(){this.speed += 10;}
+};
+
+document.write(typeof(myCar) + "<br>");
+myCar.speedUp();
+document.write("속도 : " + myCar.speed + "<br>");
+
+myCar.speedDown();
+document.write("속도 : " + myCar.speed + "<br>");
+
+// 멤버호출방법 : 참조변수.변수명 or 참조변수["변수명"]
+document.write(myCar.maker + "<br>");
+document.write(myCar["maker"] + "<br>");
+
+// value 변경
+myCar.maker = "Benz";
+myCar.model = "E300";
+myCar.year = 2022;
+myCar.speed = 250;
+
+document.write("메이커 : " + myCar.maker + ", 모델 : " + myCar.model 
+		+ ", 생산년도 : " + myCar.year + ", 속도 : " + myCar.speed + "<br>");
+		
+myCar.speedUp();
+document.write("메이커 : " + myCar.maker + ", 모델 : " + myCar.model 
+		+ ", 생산년도 : " + myCar.year + ", 속도 : " + myCar.speed + "<br>");
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

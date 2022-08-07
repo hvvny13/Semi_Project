@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myCalc</title>
+    <style>
+        td {
+            text-align: center;
+        }
+        
+    </style>
+    <script>
+        function calc(n) {
+            var x = Number(document.getElementById("input1").value);
+            var y = Number(document.getElementById("input2").value);
+            var z;
+
+            switch (n) {
+                case 1: 
+                z = Math.pow(x, 2);
+                break;
+                case 2: 
+                z = Math.sqrt(x);
+                break;
+                case 3: 
+                z = x + y;
+                break;
+                case 4: 
+                z = x - y;
+                break;
+                case 5: 
+                z = x * y;
+                break;
+                case 6: 
+                z = x / y;
+                break;
+                case 7: 
+                z = x % y;
+                break;
+            }
+            document.getElementById("output").value = z;
+        } 
+        
+        function reset() {
+            document.getElementById("output").value = "";
+        }
+        function num(n) {
+           var numb = Number(document.getElementById("input1").n.value);
+        }
+    </script>
+</head>
+<body>
+     
+     
+     
+    <table>
+        <tr>
+            <td>x :</td>
+            <td colspan="3" ><input type="text" id="input1"><br></td>
+            <td><input type="reset" id="C" value="C" onclick="reset()"></td>
+        </tr>
+        <tr>
+            <td>y : </td>
+            <td colspan="3" ><input type="text" id="input2"><br></td>
+            <td ><input type="button" id="제곱" value="x의 제곱" onclick="calc(1)"></td>
+        </tr>
+        <tr>
+            <td>결과 :</td>
+            <td colspan="3"><input type="text" id="output"><br></td>
+            <td><input type="button" id="루트" value="x의 루트" onclick="calc(2)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="더하기" value="+" onclick="calc(3)"></td>
+            <td><input type="button" id="빼기" value="-" onclick="calc(4)"></td>
+            <td><input type="button" id="곱하기" value="*" onclick="calc(5)"></td>
+            <td><input type="button" id="니누기" value="/" onclick="calc(6)"></td>
+            <td><input type="button" id="나머지" value="%" onclick="calc(7)"></td> 
+        </tr>
+
+    </table>
+</body>
+</html>

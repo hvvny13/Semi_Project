@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe DOMINGO</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+hr {	
+	margin: 5%;
+}
+
+body {
+	font-family: 'IBMPlexSansKR-Regular';
+}
+
+#about h3 {
+	margin-left: 6px;
+	border-left: 5px solid black;
+}
+
+#about #intro {
+	line-height: 30px;
+}
+
+#about p {
+	padding: 10px;
+	line-height: 10px;
+}
+
+#about img {
+	width: 100%;
+	height: 30%;
+	align-content: center;
+}
+
+
+</style>
+</head>
+<body>
+ <div data-role="page" id="page1" class="page1" data-title="Cafe DOMINGO">
+   <div data-role="header" data-position="fixed" data-theme="b">
+   <a href="#panel1" class="ui-btn-left">회원가입</a>
+   <a href="#panel2" class="ui-btn-right">로그인</a>
+   <h1>Cafe DOMINGO</h1>
+   <div data-role="navbar">
+    <ul>
+     <li><a href="menu.html" data-ajax="false">Menu</a></li>
+     <li><a href="review.html" data-ajax="false">Review</a></li>
+     <li><a href="#about">About Us</a></li>
+    </ul>
+    </div>
+    </div>
+    
+     <div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+    <form>
+     <h1>회원가입</h1>
+     <label for="name">이름 : </label>
+     <input name="name" id="name" value="" data-mini="true" data-clear-btn="true">
+     <label for="id">아이디 : </label>
+     <input name="id" id="id" value="" data-mini="true" data-clear-btn="true">
+     <label for="password1">비밀번호 : </label>
+     <input type="password" name="password1" id="password1" value=""
+     data-mini="true" data-clear-btn="true">
+     <label for="password2">비밀번호 확인 : </label>
+     <input type="password" name="password2" id="password2" value=""
+     data-mini="true" data-clear-btn="true">
+      <div class="ui-grid-a">
+       <div class="ui-block-a">
+       <a href="#" data-role="button" data-rel="close">취소</a>
+       </div>
+      <div class="ui-block-b">
+       <a href="#" data-role="button" data-rel="close">가입</a>
+     </div>
+     </div>
+    </form>
+   </div>
+    
+   <div data-role="panel" id="panel2" data-display="overlay" data-theme="b">
+   <form>
+   <h1>로그인</h1>
+   <label for="id">아이디 : </label>
+   <input name="id" id="id" value="" data-mini="true" data-clear-btn="true">
+   <label for="password">비밀번호 : </label>
+   <input type="password" name="password" id="password" value=""  data-mini="true" data-clear-btn="true">
+   <div class="ui-grid-a">
+    <div class="ui-block-a">
+     <a href="#" data-role="button" data-rel="close">취소</a>
+     </div>
+     <div class="ui-block-b">
+     <a href="#" data-role="button" data-rel="close">로그인</a>
+    </div>
+    <hr>
+    <input type="button" value="아이디 찾기">
+    <input type="button" value="비밀번호 찾기">
+   </div>
+  </form>
+ </div>
+
+
+  <div data-role="content" id="content">
+  <p style="text-align: center; font-size: 20px;">원두를 선택하세요</p>
+  <div data-role="controlgroup">
+   <a href="#moonlight" data-role="button">MOONLIGHT 인도네시아</a>
+   <a href="#sunshine" data-role="button">SUNSHINE 콜롬비아</a>
+   <a href="#honeynap" data-role="button">HONEY NAP 에티오피아</a>
+   <a href="#breeze" data-role="button">BREEZE 르완다</a>
+  </div>
+  <hr>
+   <div class="ui-grid-b">
+    <div class="ui-block-a"><a href=gallery.html data-ajax="false"><img src="images/gallery1.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-b"><a href=gallery.html data-ajax="false"><img src="images/gallery2.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-c"><a href=gallery.html data-ajax="false"><img src="images/gallery3.jpg" width="95%" height="90%"></a></div>
+    
+    <div class="ui-block-a"><a href=gallery.html data-ajax="false"><img src="images/gallery4.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-b"><a href=gallery.html data-ajax="false"><img src="images/gallery5.jpg" width="95%" height="90%"></a></div>
+    <div class="ui-block-c"><a href=gallery.html data-ajax="false"><img src="images/gallery6.jpg" width="95%" height="90%"></a></div>
+   </div>
+  </div> 
+  <div data-role="footer" id="footer" data-position="fixed" data-theme="b"> 
+   <p style="text-align: center;">직접 로스팅한 원두를 언제 어디서나 당일 배송으로 즐기세요</p>
+  </div>
+  </div>
+  
+ <div data-role="page" id="about">
+  <div data-role="header" data-theme="b" data-position="fixed" data-add-back-btn="true">
+	<h1>매장안내</h1>  
+  </div>
+  <h3>&nbsp;Cafe DOMINGO 소개</h3>
+  
+   <img src="https://mblogthumb-phinf.pstatic.net/20150831_2/shcida_1441006219297VAzRE_JPEG/552b383ce58ececd8200032d_blue-bottle-coffee-aoyama-cafe-schemata-architects_07_b.jpg?type=w2">
+   
+   <p id="intro">Cafe DOMINGO는 2020년 런칭되어 다양한 원두와 음료를 판매하고 있습니다. 
+   풍부한 커피맛과 이를 편안하게 즐길 수 있는 공간을 통해 고객의 기분좋은 경험을 제공하는데 앞장서겠습니다.</p>
+   
+  <hr>
+  <h3>&nbsp;찾아오시는 길</h3>
+  <div class="ui-grid-a">
+   <div class="ui-block-a">
+    <a href="https://goo.gl/maps/2eDkTBMsesKzVX6i6"><img src="images/map.png"></a>
+   </div>
+   <div class="ui-block-b">
+    <p><strong>Cafe DOMINGO</strong></p>
+    <p>서울특별시 역삼동 779-1</p>
+    <p>tel : 02-123-1231</p>
+    <p>email : kim123@naver.com</p>
+    <a href="tel:021231231" data-role="button" data-icon="phone">전화 문의</a>
+    <a href="mailto:kim123@naver.com" data-role="button" data-icon="mail">이메일 문의</a>
+   </div>
+  </div>
+ </div>
+
+<div data-role="dialog" id="moonlight">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>MOONLIGHT</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">인도네시아 가요 G1 TP 네츄럴</div>
+   <img src="images/coffee1.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>네츄럴 방식으로 가공한 인도네시아 커피입니다.</p>
+   <p>강렬한 베리향과 깊은 건자두의 풍미를 느낄 수 있습니다.</p>
+   <p>다크초콜릿의 묵직한 바디감이 특징인 제품입니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>베리</li>
+   <li>건자두</li>
+   <li>다크초콜릿</li>
+   </ul>
+   <a href="order.html" data-ajax="false" data-role="button">주문하기</a>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@DOMINGO</h1>
+  </div>
+ </div>
+   
+   
+   <div data-role="dialog" id="sunshine">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>SUNSHINE</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">콜롬비아 마운틴 워터 산 아구스틴</div>
+   <img src="images/coffee2.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>깨끗한 빙하수를 이용해 카페인을 <br> 최대한 제거한 디카페인 원두입니다.</p>
+   <p>건포도의 풍부한 단맛과 <br> 너티류의 고소함이 어우러진 커피입니다.</p>
+   <p>균형잡힌 맛의 즐거움을 선사합니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>건포도</li>
+   <li>구운 아몬드</li>
+   <li>캐러멜</li>
+   <li>블랙티</li>
+   </ul>
+   <a href="order.html" data-ajax="false" data-role="button">주문하기</a>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@DOMINGO</h1>
+  </div>
+ </div>
+ 
+    <div data-role="dialog" id="honeynap">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>HONEY NAP</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">에티오피아 샤키소 G1 스페셜 허니</div>
+   <img src="images/coffee3.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>에티오피아의 산지 특성에 <br> 허니 프로세싱으로 단맛이 배가 되었습니다.</p>
+   <p>핵과류의 화사함과 자스민의 꽃향기로 더 산뜻합니다.</p>
+   <p>시간이 지날수록 건자두의 풍미를 느낄 수 있고 <br> 목넘김이 깔끔합니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>자스민</li>
+   <li>핵과류</li>
+   <li>건포도</li>
+   <li>건자두</li>
+   <li>블랙티</li>
+   </ul>
+   <a href="order.html" data-ajax="false" data-role="button">주문하기</a>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@DOMINGO</h1>
+  </div>
+ </div>
+ 
+     <div data-role="dialog" id="breeze">
+  <div data-role="header" data-theme="b" data-position="fixed">
+   <h1>BREEZE</h1>
+  </div>
+  <div data-role="content">
+   <div class="ui-bar ui-bar-a">르완다 쿠카무</div>
+   <img src="images/coffee4.jpg" width="100%" height="30%">
+   <div style="text-align: center;">
+   <p>달콤한 조청의 맛이 은은하게 느껴집니다.</p>
+   <p>섬세하면서도 가벼운 오렌지 산미로 <br> 산뜻하게 즐기실 수 있습니다.</p>
+   <p>전체적으로 부드러운 바디감이 특징인 커피입니다.</p>
+   </div>
+   <div class="ui-bar ui-bar-a">TASTING NOTE</div>
+   <ul class="check1">
+   <li>오렌지</li>
+   <li>조청</li>
+   </ul>
+   <a href="order.html" data-ajax="false" data-role="button">주문하기</a>
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+   <h1>@DOMINGO</h1>
+  </div>
+ </div>
+
+</body>
+</html>

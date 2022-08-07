@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>popup2</title>
+<script type="text/javascript">
+function winopen() {
+	//localhose/web02/ch04/gugu.jsp?dan=3에서의 dan변수가 getElementById("dan")쓰임
+	var dan = document.getElementById("dan").value;
+	window.open("gugu.jsp?dan=" + dan, "_blank", "width=300, height=300");
+}
+
+
+
+</script>
+</head>
+<body>
+단을 입력하세요
+<input type="text" id="dan" value="3" size="10">
+<input type="button" value="팝업창 열기" onclick="winopen()">
+</body>
+</html>

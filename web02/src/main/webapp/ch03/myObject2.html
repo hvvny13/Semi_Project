@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myObject2</title>
+    <script>
+    var myOb = {
+        num : 123,
+        name : "김길동",
+        id : "kim", 
+        email : "kim@naver.com",
+        hp : "010-3333-4444"
+    };
+    document.write("<h>-------------원데이터--------------</h><br>");
+    document.write("사번 : " + myOb.num + "<br>");
+    document.write("이름 : " + myOb.name + "<br>");
+    document.write("id : " + myOb.id + "<br>");
+    document.write("email : " + myOb.email + "<br>");
+    document.write("hp : " + myOb.hp + "<br>");
+
+    document.write("<h>-------------변경데이터--------------</h><br>");
+    myOb.email = "kim2@gmail.com";
+    myOb.hp = "010-5555-6666";
+    document.write("email : " + myOb.email + "<br>");
+    document.write("hp : " + myOb.hp + "<br>");
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

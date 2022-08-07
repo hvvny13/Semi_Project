@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>change</title>
+<script type="text/javascript">
+function get() {
+	var val = document.getElementById("ex").innerHTML;
+	alert(val);
+}
+
+function set(message) {
+	document.getElementById("ex").innerHTML = massage;
+}
+
+function changeImage() {
+	var img = document.getElementById("image");
+	img.src="../images/tang2.jpg";
+	img.style.width = "250px";
+	img.style.height = "200px";
+}
+
+function hide() {
+	// 눈에는 사라지지만 그 요소 자리는 남아있음
+	document.getElementById("image").style.visibility = "hidden";
+	// document.getElementById("image").style.display = "none";
+	// 자리 배치 조차 없음
+}
+
+function show() {
+	document.getElementById("image").style.visibility = "visible";
+}
+
+function changeStyle() {
+	var ex = document.getElementById("ex");
+	ex.style.color ="red";
+	ex.style.backgroundColor = "yellow";
+	ex.style.fontSize = "30px";
+	ex.style.fontFamily = "궁서체";
+	ex.style.fontStyle = "italic";
+}
+
+
+
+</script>
+<style type="text/css">
+#ex {
+	background-color: blue;
+	font-family: "굴림체";
+	font-size: 50px;
+	
+}
+
+</style>
+</head>
+<body>
+ <div id="ex">div 영역</div>
+ <a href="#" onclick="get()">div의 내용</a>
+ <a href="#" onclick="set('변경되었습니다.')">div 변경</a>
+ <br>
+ <img id="image" src="../images/tang1.jpg">
+ <input type="button" value="이미지 변경" onclick="changeImage()">
+ <input type="button" value="이미지 숨김" onclick="hide()">
+ <input type="button" value="이미지 표시" onclick="show()">
+ <br>
+ <input type="button" value="글자 스타일 변경" onclick="changeStyle()">
+ 
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input_value</title>
+<script src="../include/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#button1").click(function(){
+		var name = $("#name").val();
+		alert(name);
+		name = prompt("이름을 입력하세요", "아무개");
+		$("#name").val(name);//태그의 value를 변경
+		
+		$("#img1").attr("src","../images/apple.png");
+		$("#img1").attr({
+			"width" : "300px",
+			"height" : "300px"
+		});
+		var img = $("#img1").attr("src");//src속성값을 읽어옴
+		alert(img);
+	});
+});
+
+function check() {
+	var name = document.getElementById("name").value;
+	alert(name);
+}
+
+</script>
+</head>
+<body>
+ 이름 : 
+ <input id="name" value=""><br>
+ <img id="img1" src="../images.tomato.png"><br>
+ <button id="button1">확인</button>
+</body>
+</html>
